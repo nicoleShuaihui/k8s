@@ -23,3 +23,5 @@ kubectl get --help:查看你get的命令使用
 四层负载均衡：基于IP+端口的负载均衡。
 
 七层负载均衡：基于URL等应用层信息的负载均衡。
+
+### [ git 学习] (https://github.com/nicoleShuaihui/k8s/issues/3#issue-599400505)
