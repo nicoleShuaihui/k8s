@@ -7,8 +7,6 @@
 
 3.版本库：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。
 
-FETCH_HEAD：记录本地的版本连接
-commit-id：
 
 
 ### 1、管理远程仓库：`git remote --help` 
@@ -31,7 +29,7 @@ git push origin master
 
 
 
-### 2、分支操作（[示例操作](https://blog.csdn.net/arkblue/article/details/9568249)）
+### 2、分支操作
 - 查看远程分支：` git branch -a`  
 - 查看本地分支：`git branch `
 - 创建test分支：`git branch test`，并推送分支 :`git push origin test`
