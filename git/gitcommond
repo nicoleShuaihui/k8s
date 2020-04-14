@@ -1,0 +1,14 @@
+### 管理远程仓库：`git remote --help` 
+ 
+ - 仓库添加：`git remote add origin 仓库名称`
+ - 仓库删除：`git remote remove origin `
+### 场景1：初始化仓库，本地添加远程仓库
+```
+git init 
+git remote add origin  git@github.com:nicoleShuaihui/k8s.git
+git add .
+touch README.md
+git commit -m "add readme"
+git push origin master 
+```
+添加仓库的效果等于`git clone git@github.com:nicoleShuaihui/k8s.git`
