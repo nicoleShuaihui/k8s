@@ -1,6 +1,6 @@
 ## git工作流程概念
 
-![Aaron Swartz](https://pic2.zhimg.com/80/v2-af3bf6fee935820d481853e452ed2d55_1440w.jpg)
+![](https://pic2.zhimg.com/80/v2-af3bf6fee935820d481853e452ed2d55_1440w.jpg)
 
 1.工作区：就是你在电脑里能看到的目录。
 
