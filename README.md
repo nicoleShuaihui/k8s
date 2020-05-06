@@ -1,9 +1,13 @@
 
 ### k8s 学习资源
 http://www.servicemesher.com/istio-handbook
+
 https://jimmysong.io/kubernetes-handbook/
+
 k8s监控：https://www.kubernetes.org.cn/3418.html
+
 日志收集EFK：https://www.kubernetes.org.cn/4278.html
+
 https://istio.io/zh/docs/concepts/what-is-istio/
 
 查看pods种内容：
@@ -26,4 +30,5 @@ kubectl get --help:查看你get的命令使用
 
 
 ### [git常用命令](https://github.com/nicoleShuaihui/k8s/issues/3#issue-599400505)
-### [k8s nodes 打标签]（https://github.com/nicoleShuaihui/k8s/issues/4#issue-613039082）
+### [k8s nodes 打标签] (https://github.com/nicoleShuaihui/k8s/issues/4#issue-613039082)
+### [k8s计算节点的下架与上架] (https://github.com/nicoleShuaihui/k8s/issues/5#issue-613100341)
