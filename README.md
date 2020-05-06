@@ -26,3 +26,4 @@ kubectl get --help:查看你get的命令使用
 
 
 ### [git常用命令](https://github.com/nicoleShuaihui/k8s/issues/3#issue-599400505)
+### [k8s nodes 打标签]（https://github.com/nicoleShuaihui/k8s/issues/4#issue-613039082）
