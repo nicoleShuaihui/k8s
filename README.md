@@ -17,6 +17,25 @@ kubectl get --help:查看你get的命令使用
 -o:--output='':json|yaml|wide|name|custom-columns=
  kubectl get pods -n tce -o yaml  ocloud-middleware-oapigw-api-56d9897894-n7xl7 
  ```
+### perator模式,CRD+controller=自定义资源+控制器
+
+<img width="785" alt="1634553382(1)" src="https://user-images.githubusercontent.com/43400129/137715469-13dc02fd-8dae-4a2e-91aa-f7612fe468b8.png">
+
+```
+理解list-watch模式：
+创建pod-yaml-apply过程后端对应的服务链路解释：
+
+1、apiserver接收到请求后，存储pod事件到etcd中。
+2、controller-manager通过apisever监听到事件，就执行动作，create pod。
+3、schedule的watch接口会从apiserver出监听到新建的pod信息，scheduler根据集群信息，调度node，通过apiserver将信息写到etcd中
+ 
+etc：更新一个pod的状态。写入的状态create replicationSet，create pod ，update pod。向外发送请求事件
+apiserver：通信作用，集群核心，传递作用，（谁都可以与之交互）
+controller-manager；通过apisever监听事件，根据事件调节状态
+scheduler：pod的调度，查看合适的nodeip并写入
+kubelet：会监听pod的更新，当监听到事件中的ip是本身ip时，会启动pod的
+
+```
 
 ### 基于负载均衡的理解
 
