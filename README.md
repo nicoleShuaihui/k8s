@@ -37,6 +37,25 @@ kubelet：会监听pod的更新，当监听到事件中的ip是本身ip时，会
 
 ```
 
+### alias k8s服务名称
+
+```
+vi /root/.bashrc
+
+alias mysql22001='mysql -umysql_user -pmysql_passwd -h 10.37.2.117 -P 22001'
+alias mysql22003='mysql -umysql_user -pmysql_passwd -h 10.37.2.117 -P 22003'
+alias mysql22005='mysql -umysql_user -pmysql_passwd -h 10.37.2.117 -P 22005'
+alias kgbroker="kubectl get pod -nservice-brokers -o wide | grep "
+alias kgsb="kubectl get servicebindings -ntce | grep "
+alias kgsi="kubectl get serviceinstances -ntce | grep "
+alias kgse="kubectl get secret -nservice-brokers | grep "
+alias kdp="kubectl describe pod -ntce"
+alias kgs="kubectl get svc --all-namespaces |grep "
+alias kdel="kubectl delete pod -ntce "
+alias kg="kubectl get pod -o wide --all-namespaces |grep "
+source /root/.bashrc
+```
+
 ### 基于负载均衡的理解
 
 二层负载均衡：基于MAC地址的二层负载均衡。
